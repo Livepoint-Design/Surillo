@@ -9,3 +9,19 @@
 	left: -130%;
 	position:relative;
 }
+
+/* sloppy */
+.rightsloppy { 
+	border:solid 1px #2d2d2d;  
+	text-align:center; 
+	background:#575757; 
+	padding:1000px 50px 100px 50px;  
+	-moz-border-radius: 5px;  
+	-webkit-border-radius: 5px; 
+	border-radius: 5px;
+	z-index: 999;
+	position: fixed;
+	width: 150px;
+	margin: -20% 0 0 80%;
+}
+.rightsloppy{transform:  rotate(146deg) scale(0.904) skew(1deg) translate(-3px);-webkit-transform:  rotate(146deg) scale(0.904) skew(1deg) translate(-3px);-moz-transform: rotate(146deg) scale(0.904) skew(1deg) translate(-3px);-o-transform:  rotate(146deg) scale(0.904) skew(1deg) translate(-3px);-ms-transform:  rotate(146deg) scale(0.904) skew(1deg) translate(-3px);}
