@@ -15,6 +15,13 @@
 	background-color: transparent !important;
 }
 
+.logo {
+	width: 100%;
+	float: right;
+	margin-right: 20%;
+	padding-bottom: 60px;
+}
+
 /* sloppy */
 #sloppy {
 	width: 100%;
