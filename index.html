@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>Surillo</title>
+	<meta name="author" content="Livepoint Design" />
+	<meta name="description" content="surillo website" />
+	<meta name="keywords"  content="surillo, szeczecin" />
+	<meta name="Resource-type" content="Document" />
+
+	
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="demoPage.css" />
+	<link rel="stylesheet" type="text/css" href="callback.css" />
+	
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var pepe = $.fn.fullpage({
+				slidesColor: ['#fff'],
+				anchors: ['home', 'home/2', 'home', 'klienci', 'kontakt'],
+				menu: '#menu',
+				easing: 'easeOutExpo',
+				afterLoad: function(anchorLink, index){
+				
+					//section 2
+					if(index == 2){
+						//moving the image
+						$('#section1').find('img').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+						
+						$('#section1').find('p').first().fadeIn(1800, function(){
+							$('#section1').find('p').last().fadeIn(1800);
+						});;
+						
+					}
+					
+					//section 3
+					if(anchorLink == '3rdPage'){
+						//moving the image
+						$('#section2').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+				}
+			});
+			
+		});
+	</script>
+
+</head>
+<body>
+
+
+<ul id="menu">
+	<li data-menuanchor="home"><a href="#home/0">home</a></li>
+	<li data-menuanchor="home/2"><a href="#home/2">o nas</a></li>
+	<li data-menuanchor="home/4"><a href="#home/4">oferta</a></li>
+	<li data-menuanchor="home/6"><a href="#home/6">klienci</a></li>
+	<li data-menuanchor="home/8"><a href="#home/8">kontakt</a></li>
+</ul>
+
+<div class="section" id="section0">
+    <div class="slide active"><div class="wrap"><h1>Hello fullPage.js</h1></div></div>
+    <div class="slide"><h1>przejściówka</h1></div>
+    <div class="slide"><h1>This is an awesome plugin</h1></div>
+    <div class="slide"><h1>przejściówka</h1></div>
+    <div class="slide"><h1>Which enables you to create awesome websites</h1></div>
+    <div class="slide"><h1>przejściówka</h1></div>
+    <div class="slide"><h1>In the most simple way ever</h1></div>
+    <div class="slide"><h1>przejściówka</h1></div>
+    <div class="slide"><h1>In the most simple way ever</h1></div>
+</div>
+
+</body>
+</html>
