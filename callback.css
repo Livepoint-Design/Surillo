@@ -11,7 +11,7 @@
 }
 
 .section {
-	z-index: 2;
+	z-index: 20;
 	background-color: transparent !important;
 }
 
@@ -33,28 +33,28 @@
 }
 
 .rightsloppy {  
-	text-align:center; 
+	text-align:center;
 	background: #ed4c2e;
-	margin:0;
+	margin:0 -1800px;
 	top:0;
 	left:0;
-	z-index: 999;
-	position: fixed;
-	width: 2500px;
+	z-index: 1;
+	position: absolute;
+	width: 5500px;
 	height: 150px;
 	float: right;
 }
 .leftsloppy {
 	text-align:center; 
 	background: #ed4c2e;
-	margin:0 -2350px;
+	margin:0 -2815px;
 	top:0;
 	left:0;
 	z-index: 1;
 	position: fixed;
 	width: 5500px;
 	height: 450px;
-	float: right;
+	float: left;
 }
 /*
 .leftloppy { 
