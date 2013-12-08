@@ -16,19 +16,40 @@
 }
 
 /* sloppy */
-.rightsloppy { 
-	border:solid 0px #2d2d2d;  
+#sloppy {
+	width: 100%;
+	padding: 0;
+	margin:0;
+	top:0;
+	left:0;
+	position: relative;
+}
+
+.rightsloppy {  
 	text-align:center; 
-	background: #ed4c2e; 
-	padding:1500px 50px 1500px 50px;  
-	-moz-border-radius: 5px;  
-	-webkit-border-radius: 5px; 
-	border-radius: 5px;
+	background: #ed4c2e;
+	margin:0;
+	top:0;
+	left:0;
 	z-index: 999;
 	position: fixed;
-	width: 150px;
-	margin: -40% 0 0 99%;
+	width: 2500px;
+	height: 150px;
+	float: right;
 }
+.leftsloppy {
+	text-align:center; 
+	background: #ed4c2e;
+	margin:0 -2350px;
+	top:0;
+	left:0;
+	z-index: 1;
+	position: fixed;
+	width: 5500px;
+	height: 450px;
+	float: right;
+}
+/*
 .leftloppy { 
 	border:solid 0px #2d2d2d;  
 	text-align:center; 
@@ -39,20 +60,21 @@
 	border-radius: 5px;
 	z-index: 1;
 	position: fixed;
-	width: 350px;
-	margin: -40% 0 0 30%;
+	width: 450px;
+	margin: -60% 0 0 30%;
 }
+*/
 .rightsloppy {
-transform:  rotate(135deg) scale(0.904) skew(1deg) translate(-3px);
--webkit-transform:  rotate(135deg) scale(0.904) skew(1deg) translate(-3px);
--moz-transform: rotate(135deg) scale(0.904) skew(1deg) translate(-3px);
--o-transform:  rotate(135deg) scale(0.904) skew(1deg) translate(-3px);
--ms-transform:  rotate(135deg) scale(0.904) skew(1deg) translate(-3px);
+transform:  rotate(45deg) scale(0.904) skew(1deg) translate(-3px);
+-webkit-transform:  rotate(45deg) scale(0.904) skew(1deg) translate(-3px);
+-moz-transform: rotate(45deg) scale(0.904) skew(1deg) translate(-3px);
+-o-transform:  rotate(45deg) scale(0.904) skew(1deg) translate(-3px);
+-ms-transform:  rotate(45deg) scale(0.904) skew(1deg) translate(-3px);
 }
-.leftloppy {
-transform:  rotate(135deg) scale(0.904) skew(1deg) translate(-3px);
--webkit-transform:  rotate(135deg) scale(0.904) skew(1deg) translate(-3px);
--moz-transform: rotate(135deg) scale(0.904) skew(1deg) translate(-3px);
--o-transform:  rotate(135deg) scale(0.904) skew(1deg) translate(-3px);
--ms-transform:  rotate(135deg) scale(0.904) skew(1deg) translate(-3px);
+.leftsloppy {
+transform:  rotate(45deg) scale(0.904) skew(1deg) translate(-3px);
+-webkit-transform:  rotate(45deg) scale(0.904) skew(1deg) translate(-3px);
+-moz-transform: rotate(45deg) scale(0.904) skew(1deg) translate(-3px);
+-o-transform:  rotate(45deg) scale(0.904) skew(1deg) translate(-3px);
+-ms-transform:  rotate(45deg) scale(0.904) skew(1deg) translate(-3px);
 }
